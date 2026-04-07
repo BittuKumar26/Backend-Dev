@@ -5,7 +5,7 @@ mongoose.connect("mongodb://127.0.0.1:27017/libraryDB")
 .catch(err=>console.log(err));
 
 
-// ---------- SCHEMA ----------
+
 const bookSchema = new mongoose.Schema({
     title: String,
     author: String,
@@ -16,7 +16,7 @@ const bookSchema = new mongoose.Schema({
 const Book = mongoose.model("Book", bookSchema);
 
 
-// ---------- OPERATIONS ----------
+ 
 
 // 1. Add new book
 async function addBook() {
